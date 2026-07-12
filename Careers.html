@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministers' Touch Schools | Careers</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="brand">
+            <img src="images/m.png" alt="Ministers' Touch Schools logo" width="68">
+            <span>Ministers' Touch Schools</span>
+        </a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="navbar" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <nav id="navbar" aria-hidden="true">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="community.html">Community</a>
+            <a href="Sports.html">Sports programs</a>
+            <a href="Careers.html">Careers</a>
+            <a href="Gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <h1>Careers</h1>
+        <p>Join a team dedicated to shaping the next generation.</p>
+    </section>
+
+    <section class="content-section wrap">
+        <h2>Work With Us</h2>
+        <p>At Ministers' Touch Schools, we look for educators and staff who bring both skill and heart to their work. If you're passionate about nurturing young people and want to grow with a values-driven school, we'd love to hear from you.</p>
+
+        <div class="card-grid" style="margin-top: 32px;">
+            <div class="card">
+                <span class="tag">Full-time</span>
+                <h3>Primary School Teacher</h3>
+                <p>Seeking a qualified, nurturing teacher to lead a lower-primary classroom. Experience with active learning methods preferred.</p>
+            </div>
+            <div class="card">
+                <span class="tag">Full-time</span>
+                <h3>Secondary Mathematics Teacher</h3>
+                <p>Looking for an experienced mathematics teacher to prepare senior students for national examinations.</p>
+            </div>
+            <div class="card">
+                <span class="tag">Part-time</span>
+                <h3>Sports Coach</h3>
+                <p>Coach for our football and athletics programs, running after-school training sessions.</p>
+            </div>
+            <div class="card">
+                <span class="tag">Full-time</span>
+                <h3>School Counselor</h3>
+                <p>Support student welfare, guidance, and pastoral care across all grade levels.</p>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 48px;">How to Apply</h2>
+        <p>Send your CV and a short cover letter to <strong>careers@ministerstouchschools.org</strong> with the position title in the subject line. Shortlisted candidates will be contacted for an interview.</p>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@ministerstouchschools.org</p>
+                <p>Phone: +256 701 823678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>Plot 12, Main Street, Kampala, Uganda</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                    <p>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 12.07C22 6.48 17.52 2 11.93 2 6.33 2 2 6.48 2 12.07 2 17.11 5.66 21.26 10.44 22v-7.03H8.08V12.1h2.36V9.88c0-2.33 1.38-3.61 3.5-3.61.99 0 2.03.18 2.03.18v2.24h-1.14c-1.13 0-1.48.7-1.48 1.42V12.1h2.52l-.4 2.87h-2.12V22C18.34 21.26 22 17.11 22 12.07z"/>
+                            </svg>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2.5" y="2.5" width="19" height="19" rx="5" />
+                                <circle cx="12" cy="12" r="3.2" />
+                                <path d="M17.5 6.5h.01" />
+                            </svg>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 7.5v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                    </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Minister's Touch Schools. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navbar = document.getElementById("navbar");
+
+        menuToggle.addEventListener("click", () => {
+            const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+            menuToggle.setAttribute("aria-expanded", String(!isExpanded));
+            navbar.classList.toggle("active");
+            navbar.setAttribute("aria-hidden", String(isExpanded));
+            menuToggle.setAttribute("aria-label", isExpanded ? "Open navigation menu" : "Close navigation menu");
+        });
+    </script>
+</body>
+</html>
